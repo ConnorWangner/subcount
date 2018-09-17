@@ -1,0 +1,17 @@
+{
+  "name": "subcount",
+  "scripts": {
+    "postdeploy": "bundle exec puma -C config/puma.rb",
+    "pr-predestroy": "bundle exec rake jobs:work"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
